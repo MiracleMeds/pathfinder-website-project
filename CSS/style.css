@@ -1,60 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@font-face {
+  font-family: 'moonshinerregular';
+  src: url('fonts/moonshiner-regular-webfont.woff2') format('woff2'),
+       url('fonts/moonshiner-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/*Beige, consider removing*/
+@font-face {
+  font-family: 'moonshinerregular_lines';
+  src: url('fonts/moonshiner-regularlines-webfont.woff2') format('woff2'),
+       url('fonts/moonshiner-regularlines-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/*Italic verson*/
+@font-face {
+  font-family: 'moonshineroblique';
+  src: url('fonts/moonshiner-oblique-webfont.woff2') format('woff2'),
+       url('fonts/moonshiner-oblique-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/*Doesn't Work? consider removing*/
+@font-face {
+  font-family: 'moonshineroblique_lines';
+  src: url('moonshiner-obliquelines-webfont.woff2') format('woff2'),
+       url('moonshiner-obliquelines-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 /* Use * for debugging */
 *{
 
 }
 
+html{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h1, h2{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+h3, h4{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
 /* variables go here */
 :root{
     --white: #FFFFFF;
+    --black: #000000;
 }
 
-html{
-
-}
-
-main{
-
-}
-
-header,footer{
-
-}
-
-/* Header */
-header{
+body{
+  padding:0;
+  margin:0 auto;
+  height:100%;
   display:flex;
+  flex-wrap: wrap;
+}
+
+/* Header and its css content */
+header{
+  /*Regretably needed to repeat display to work*/
+  display:flex;
+  flex-flow: row;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 1%;
 }
-  header nav{
-    margin: 4em;
-  }
-    header nav ul {
-      list-style-type: none;
-      display:flex;
-      gap: 0.5em;
-      margin: 0;
-    }
-    header ul li a {
-      display:inline-block;
-      text-decoration: none;
-      color:var(black);
-      text-transform: uppercase;
-      font-size: 1rem;
-      border-radius:4px;
-      border:1px solid black;
-      cursor:pointer;
-      /*Button size:*/
-      padding: 0.3em 1.2em;
-    }
+header nav{
+  display:flex;
+  width:75%;
+  justify-content: center;
+}
 
-      header ul li a:hover{
-        background:linear-gradient(to bottom, white 5%, skyblue 100%);
-      }
-      
-      header .active{
-        background:linear-gradient(to bottom, blue 5%, white 100%);
-        border:1px solid blue;
-        background-color:blue;
-        color: black;
-      }
+  header nav ul {
+    display:flex;
+    list-style-type: none;
+    gap: 0.5em;
+    flex-wrap:nowrap;
+    
+  }
+  header nav ul li{
+    margin: 0 12px 0 12px;
+  }
+  header ul li a {
+    text-decoration: none;
+    color:var(--black);
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-radius:4px;
+    border:1px solid black;
+    cursor:pointer;
+    padding: 2px;
+    
+  }
+/*
+    header ul li a:hover{
+      background:linear-gradient(to bottom, white 5%, skyblue 100%);
+    }
+    
+    header .active{
+      background:linear-gradient(to bottom, blue 5%, white 100%);
+      border:1px solid blue;
+      background-color:blue;
+      color: black;
+    } */
+
+/*Main content*/
+main{
+  background-color: papayawhip;
+  width:64%;
+}
+.welcome{
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Left and Right borders*/
+.leftSpace{
+  width:18%;
+  background-color:lightblue;
+}
+.rightSpace{
+  background-color: lightcoral;
+  width:18%;
+}
+
+footer{
+  display:flex;
+  flex-flow:row;
+  width: 100%;
+}
