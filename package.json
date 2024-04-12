@@ -1,0 +1,17 @@
+{
+  "name": "01pfwebproject",
+  "author": "Guillermo Perez",
+  "main": "sever.js",
+  "scripts":{
+    "dev": "nodemon server",
+    "test": "node server.js"
+  },
+  "dependencies": {
+    "date-fns": "^3.6.0",
+    "express": "^4.19.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

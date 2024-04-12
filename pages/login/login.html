@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--php?-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../public/CSS/style.css">
+    </head>
+    <body>
+        <div class ="wrapper">
+            <!--ADJUST WRAPPER FOR PROPER POSITIONING-->
+            <!-- embed an oopsie box here so it will be with the login box.-->
+        <div class = "inputBox">
+            <form method = "post" action = "../controllers/Users.php">
+                <input type= "hidden" name = "type" value = "login">
+                <h2>Login</h2>
+                <!--Note to self, Don't change name of the inputs!!-->
+                <input class="textbox" type = "text" name = "name/email"><br><br>
+                <input class = "textbox" type =  "password" name = "usersPwd"><br><br>
+                
+                <input type = "submit" value = "Login"><br><br>
+
+                <a href = "signup.html" class = "clickable">No account? Create one here!</a>
+
+        </div>
+        </div>
+    </body>
+</html>
