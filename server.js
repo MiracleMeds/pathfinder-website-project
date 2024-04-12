@@ -27,6 +27,8 @@ site.get('(/login)?/login(.html)?', (req, res) =>{
 site.get('(/login)?/signup(.html)?', (req, res) =>{
     res.sendFile(path.join(__dirname, 'pages', 'login', 'signup.html'));
 });
-
+site.get('/glossary(.html)?', (req, res) =>{
+    res.sendFile(path.join(__dirname, 'pages', 'glossary.html'));
+});
 
 site.listen(PORT, () => console.log('Server is running on port ' + PORT));
