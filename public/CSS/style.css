@@ -85,7 +85,7 @@ h3, h4{
     --black: #000000;
     --burgundy: #800020;
     --coffee: #99592A;
-    --parchment: #DEB887;
+    --parchment: #fffdd0;
     --sunbleached: #E9D0AF;
     --magnolia: #426A5A;
     --mint: #c0f2dd;
@@ -170,29 +170,178 @@ main{
 /*Left and Right borders*/
 .leftSpace{
   width:17%;
-  background-image:linear-gradient(to right, var(--sunbleached) 0%, var(--parchment) 90%);
+  /* background-image:linear-gradient(to right, var(--black) 0%, var(--parchment) 90%); */
+  background-image: url("../img/BurntEdgesSharpRight.png"), linear-gradient(to left, var(--parchment) 78% , var(--coffee) 100%);
+  background-repeat: repeat-y;
+  background-position: left;
+  background-color: var(--parchment);
 }
 .rightSpace{
-  background-image: linear-gradient(to left, var(--sunbleached) 0%, var(--parchment) 90%);
   width:17%;
+  background-image: url("../img/BurntEdgesSharpLeft.png"), linear-gradient(to right, var(--parchment) 78% , var(--coffee) 100%);
+  background-repeat: repeat-y;
+  background-position: right;
+  /* background-color: var(--parchment); */
 }
 
 footer{
   display:flex;
   flex-flow:row;
   width: 100%;
+  background-color: var(--coffee);
+  min-height: 40px;
 }
 
 /*Action List Page*/
-.tag{
-  text-decoration: none;
-  padding: 1px;
-  border-radius: 0px;
-  border: 2px solid var(--black);
-  background-color: var(--burgundy);
-  color: var(--white);
-}
-.vectorPinnableElement{
-    width:18%;
-    background-color:lightblue;
-}
+  #leftActionBar{
+    width: 10%;
+    background-image: url("../img/BurntEdgesSharpRight.png"), linear-gradient(to left, var(--parchment) 50% , var(--coffee) 110%);
+  }
+  #mainActionBar{
+    width:75%;
+  }
+  #mainActionBar ul {
+    text-decoration: none;
+    list-style-type: none;
+    padding:0;
+  }
+
+  .navbar{
+    order: 1;
+      overflow: hidden;
+      width:13%;
+      background-color:var(--magnolia);
+      position:-webkit-sticky;
+      position:sticky;
+      top: 0;
+  }
+  .navbar ul{
+    word-wrap: break-word;
+  }
+  .navbar li {
+    overflow: hidden;
+    text-decoration: none;
+    list-style-type: none;
+    width: 100%;
+    padding-top: 1%;
+    border-bottom:1px solid var(--black);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+  }
+  .navbar li a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+  .navbar:hover{
+    width: 23%;
+    transition: 0.2s ease-in-out;
+    background-image: linear-gradient(to right, var(--magnolia) 45% , var(--mint) 300% );
+  } 
+  .navbar:hover + #mainActionBar{
+    width:65%;
+    transition: 0.2s ease-in-out;
+
+  }
+  .navbar li:hover{
+    color: var(--white);
+    background-color: var(--burgundy);
+    border-radius: 2px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-bottom:3px solid var(--black);
+    transition: 0.2s ease-in-out;
+
+  }
+
+  .container { 
+    display: flex;
+    height: auto; 
+    background-color: var(--sunbleached);
+    border: 6px solid var(--black); 
+    padding: 2% 4% 2% 4%;
+    border-radius: 3px;
+    box-shadow: var(--black); 
+    flex-wrap: wrap;
+    flex-flow:column;
+    margin-bottom: 25px;
+  }
+  .container p{
+    margin: 6px 0 6px 0;
+    font-weight: 300;
+    font-size: 0.95rem;
+    font-style: normal;
+  }
+  .line {
+    margin: 0;
+    margin-top: 2px;
+    padding: 0;
+    border-bottom: 2px solid var(--black);
+  }
+  .container .titleLine h2 {
+    font-family: moonshinerregular;
+    font-size: 2rem;
+    padding-right: 1%;
+    text-wrap:nowrap;
+    flex-shrink: 0;
+    letter-spacing: 1px;
+    /*Don't remove margin-block-end/start*/
+    margin-block-end: 0;
+    margin-block-start: 2px;
+  }
+  .titleLine{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0;
+  }
+  .actionIcon {
+    max-width: 120px;
+    max-height: 40px;
+    margin-top: 24px;
+    margin-block-start: 0;
+  }
+
+  .actionAttributes h4{
+    line-height: 1.35rem;
+    margin-block-end: 6px;
+    margin-block-start: 6px;
+    
+  }
+  .container_box { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 2vw; 
+    flex-wrap: wrap; 
+    margin-top: 20px; 
+  } 
+
+  /* unused */
+  .cardutility { 
+    height: 80px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px; 
+    font-size: 20px; 
+    border-radius: 10px; 
+  } 
+  /* back to being used */
+  .tag{
+    text-decoration: none;
+    padding: 1px;
+    border-radius: 0px;
+    border: 2px solid var(--black);
+    background-color: var(--burgundy);
+    color: var(--white);
+  }
+  #actionFooter{
+    display: flex;
+    flex-flow:row;
+    order: 2;
+    width: 100%;
+    height:800px;
+  }
+

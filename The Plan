@@ -1,4 +1,11 @@
-Express JS with Mongoose
+
+Future goal:
+Next JS with Mongoose --> Google Cloud?
+
+
+Now:
+express js, nodejs is all I need!!!!! No database. You are complicating something that can be relatively simple.
+
 AVOID PHP IF YOU CAN 
 it could give you bonus pts but also take significantly longer
 to do anything since you'd be balancing learning javascript and
@@ -9,3 +16,4 @@ There must be a tutorial out there for your idea
 Product Detail Page - what amazon uses for their items when you click on them. Make a database, connect info through javascript and auto fill-in the info for each component. (Video tutorial on "Due this Week" tab group)
 *npm run dev* in the terminal to run website. Use over other options to make sure everything works.
 Vector pinnable element similar to wikipedia's Content jumpto on the side of the page.
+JQuery is for effects done to your html. Doesn't add functionality to JS, just shortcuts for the most part.

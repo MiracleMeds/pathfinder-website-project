@@ -10,52 +10,45 @@ have most of this empty for now. (will be one of the first things I do I think..
         <meta name="Action List" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../public/CSS/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="../scripts/actionAssembler.js" type="module"></script>
     </head>
+    
     <header>
-        <img src="../public/img/placeholder.png" alt="img/placeholder.png">
-        <h5>Header(I serve a purpose)</h5>
+        <img src="../public/img/ActionLibLOGOWIP.png" alt="img/placeholder.png">
+        <h5>Header(I serve a purpose. Being ugly.)</h5>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="glossary.html">Glossary</a></li>
                 <li><a href="login/login.html">Log In</a></li>
             </ul>
         </nav>
     </header>
-    <div class="dropdownFilters">
+   
+    
 
     <body>
+    <div class="dropdownFilters">
     </div>
-    <div class="rightSpace">
-        <h4>Empty Right Space</h4>
+    <div class="leftSpace" id="leftActionBar"></div>
+    <div class="navbar">
+        <ul>
+            <!--Written in javascript and imported here.-->
+            <span id="navbargoeshere"></span>
+        </ul>
     </div>
-        <main>
+        <main id="mainActionBar">
             <ul>
-                <li>Maybe an unordered list that keeps getting bullet points?</li>
-                <li>It would cut down on the amount of writing needed to make this project shine.</li>
-                <li>It is only a working model after all.</li>
-                <li>make something more complicated later on.</li>
-                <li>
-                    <h2>title</h2>
-                    <img src="../public/img/placeholder.png">
-                    <h4><b>Requirements:</b> You are wielding a shield.
-                        <br>
-                        <b>Traits:</b>
-                        <a href="glossary.html" class="tag">Manipulate</a>
-                    </h4>
-                    <p>
-                        Description <br><i>subtext</i>
-                        
-                    </p>
-                    <p></p>
-                </li>
+                <span id="stuffgoeshere"></span>
             </ul>
         </main>
-    <!--REQUIRES JAVASCRIPT TO FUNCTION-->
-    <div class="vectorPinnableElement">
-
-        <p>Vector pinnable element similar to wikipedia's Content jumpto on the side of the page.</p>
-    </div>
+        
+    <!--REQUIRES JAVASCRIPT TO FUNCTION siblings-->
+    <footer id="actionFooter">
+        Hey
+    </footer>
     </body>
+
 
 </html>

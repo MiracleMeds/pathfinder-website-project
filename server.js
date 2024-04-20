@@ -17,6 +17,7 @@ site.use(express.json());
 //write redundant code
 site.use('/public', express.static(path.join(__dirname, '/public')));
 
+site.use('/scripts', express.static(path.join(__dirname, '/scripts')));
 //Allows the server to understand what each link means when a request to move to a page is done.
 // ^ = nothing before, $ = nothing after, ()? = optional.
 site.get('^/$|/index(.html)?|/home( page)?', (req, res) =>{
@@ -26,13 +27,13 @@ site.get('^/$|/index(.html)?|/home( page)?', (req, res) =>{
 site.get('/ActionList(.html)?|/action(list)?|/actions', (req, res) =>{
     res.sendFile(path.join(__dirname, 'pages', 'ActionList.html'));
 });
-site.get('(/login)?/login(.html)?', (req, res) =>{
+site.get('(/pages/login)?/login(.html)?', (req, res) =>{
     res.sendFile(path.join(__dirname, 'pages', 'login', 'login.html'));
 });
 site.get('(/login)?/signup(.html)?', (req, res) =>{
     res.sendFile(path.join(__dirname, 'pages', 'login', 'signup.html'));
 });
-site.get('/glossary(.html)?', (req, res) =>{
+site.get('(/pages/)?glossary(.html)?', (req, res) =>{
     res.sendFile(path.join(__dirname, 'pages', 'glossary.html'));
 });
 
