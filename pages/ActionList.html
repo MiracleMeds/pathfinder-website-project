@@ -12,13 +12,13 @@ have most of this empty for now. (will be one of the first things I do I think..
         <link rel="stylesheet" href="../public/CSS/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="../scripts/actionAssembler.js" type="module"></script>
+        <script src="../scripts/pageDetailing.js" type="module"></script>
     </head>
     
     <header>
         <img src="../public/img/ActionLibLOGOWIP.png" alt="img/placeholder.png">
-        <h5>Header(I serve a purpose. Being ugly.)</h5>
         <nav>
-            <ul>
+            <ul class="nodotsul">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="glossary.html">Glossary</a></li>
                 <li><a href="login/login.html">Log In</a></li>
@@ -28,12 +28,12 @@ have most of this empty for now. (will be one of the first things I do I think..
    
     
 
-    <body>
+    <body id="actionListBody">
     <div class="dropdownFilters">
     </div>
     <div class="leftSpace" id="leftActionBar"></div>
     <div class="navbar">
-        <ul>
+        <ul class="nodotsul">
             <!--Written in javascript and imported here.-->
             <span id="navbargoeshere"></span>
         </ul>
@@ -46,7 +46,7 @@ have most of this empty for now. (will be one of the first things I do I think..
         
     <!--REQUIRES JAVASCRIPT TO FUNCTION siblings-->
     <footer id="actionFooter">
-        Hey
+        <p class="subtext">Action Lib was created by Guillermo Perez</p>
     </footer>
     </body>
 

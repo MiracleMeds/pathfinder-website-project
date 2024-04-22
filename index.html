@@ -29,56 +29,112 @@
 
         <div class="welcome">
             
-            <h2>Welcome!</h2>
-            <p id="poo">
-                Lorem ipsum etc etc etc etc
+            <h2>Welcome to Action Lib!</h2>
+            <p class = "subtext">
+               This website is still in its early stages of development so not every feature might work yet.
             </p>
         </div>
-        <div class="jumpTo">
+        <div class="explanation">
+            <h2>
+                What is Action Lib?
+            </h2>
+            <p>
+                Action Lib is a tool used to help players of the tabletop roleplaying game
+                Pathfinder Second Edition keep track of their possible actions during combat.
+                Pathfinder's combat can be extremely overwhelming for new players and a character
+                sheet can only fit so much information! Now, lets lighten that load!
+            </p>
+        </div>
+        <div class = "jumpTo">
             <h2>What This page will cover</h2>
             <!--This will be a set of buttons that will jump to certain sections of this page.-->
-            <ul>
-                <li><a>Explanation</a></li>
-                <li><a>Tutorial</a></li>
-                <li><a>Adapting to Your Sheet</a></li>
-                <li><a>Other Resources</a></li>
+            <ul class="nodotsul">
+                <li><a href = "#tutorial">Tutorial:</a>
+                <p> A small intro to help you get started using Action Lib.</p>
+                </li>
+                <li><a href = "#customization">Adapting to Your Charater:</a>
+                    <p>Learn how cater your list to what you can do.</p>
+                </li>
+                <li><a href="#helpfulTools">Other Resources:</a>
+                    <p>A list of other useful websites for Pf2e.</p>
+                </li>
             </ul>
         </div>
         <!--I like to give my divs class names to help differentiate the page a bit. I hope that is not bad.-->
-        <div class="explanation">
-            <h2>
-                What is &ltinsert website name here&gt?
-            </h2>
-            <p>
-                its this and that! Crazy Right?!
-            </p>
-        </div>
-        <div class="tutorial">
+
+        <div id= "tutorial">
             <h2>Getting Started</h2>
-            <p>this and that!</p>
+            <p>
+                As Action Lib stands as of right now, only the "Actions" and "Glossary" sections work correctly.
+                I plan to implement a login feature so that users can keep preferences (Such as favoriting certain actions)
+                and way more available actions to choose from. So treat this website as a prototype.<br><br>
+                If you know your way around JavaScript, I added a "mock database", where all the actions are currently held.
+                If you go into the scripts folder there is a file called "mockDatabase.js". You can add a couple of actions 
+                using the structure I have layed out. Copy/Paste the layout template from the comments and fill it out. 
+                I'd suggest leaving the "traits" section empty (traits: "",) as currently it requires a url to work.
+                <br><br>
+                Once you filled out your action, paste the const name into the imports list at the bottom of mockDatabase and 
+                go ahead and open the file "actionAssembler.js". add your new const to the import list on line 1 and add it to the 
+                array on line 24. <br><br>
+                And you're good to go!
+                <br><br>
+                This feature of manually writing the code into the database like this is <i>not</i> the intended way of using this
+                webpage and I will later have a way to add on your own custom actions later on. For now though, I wanted to present 
+                the option if you're so inclined.
+            </p>
             <!--embed a small video showing how it works. Maybe a gif since it can loop over & over-->
         </div>
-        <div class="customization">
+        <div id = "customization">
             <h2>Make it Your Own</h2>
-            <p>This goes over some features about my website that separates it from a wiki.</p>
+            <p>The functionality for this section is currently not implemented so for now this section will be left blank.</p>
 
         </div>
-        <div class="helpfulTools">
-            <h3>Some Other Resources You Might Consider</h3>
+        <div id = "helpfulTools">
+            <h2>Some Other Resources You Might Consider Using</h2>
+            <p class="subtext">Note: None of these websites are mine.</p>
+            <p>
+                These websites work well in unison with Action Lib. They are fantastic resources for anyone who 
+                plays Pathfinder Second Edition. If you've never used these before check them out!
+            </p>
             <ul>
-                <li><a href="">Archives Of Nethys</a>: This explains it.</li>
-                <li><a href="">PathBuilder</a>: This explains it.</li>
-                <li><a href="">Pathfinder Nexus</a>: This explains it.</li>
+                <li>
+                    <a href="https://2e.aonprd.com/">Archives Of Nethys:</a>
+                    <p>
+                    The official wikipedia for Pathfinder Second Edition! A completely free website designed to allow anyone access
+                    to all of Pathfinder's rules for any expansion! While they don't give you access to any books themselves, they are
+                    an amazing tool to learn Pathfinder 2e for free. It has all players/GMs need to get started! 
+                    </p>
+                </li>
+                <li>
+                    <a href="https://pathbuilder2e.com/">PathBuilder:</a>
+                    <p>
+                        Pathbuilder is a great tool for making free character sheets online easily and quickly. The site does most of the heavy lifting
+                        when it comes to making a charater, automatically adding bonuses and calculating scores whenever you choose your featues.
+                        Pathbuilder also has access to all Pathfinder 2e expansions, letting you choose from any features you'd want for free!
+                    </p>
+                </li>
+                <li><a href="https://app.demiplane.com/nexus/pathfinder2e">Pathfinder Nexus:</a>
+                    <p>
+                        Pathfinder Nexus is a website that combines the previous two resources with a more approachable format.
+                        They allow you to buy digital versions of Pathfinder's books through their website, allowing you to read
+                        them from anywhere. They have a character builder as well but you are restricted to only a couple of options
+                        Pathfinder Nexus gives for free. You need to own the digital copies of the Pathfinder books to use the options
+                        listed in them.
+                    </p>
+                </li>
             </ul>
         </div>
+        <div class="endSpace"></div>
     </main>
     <div class="rightSpace"></div>
-    </body>
 
+    </body>
+    
     <footer>
         <h4>&ltinsert website name here&gt</h4>
         <p>Disclaimer</p>
         <!--Teacher requires something in footer. Don't remember what...-->
+        <p class="subtext">Action Lib was created by Guillermo Perez.</p>
     </footer>
 
 </html>

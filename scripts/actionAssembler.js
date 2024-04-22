@@ -20,7 +20,8 @@ A list of the functions in here for use:
 $(document).ready(function(){
 
     //all actions on the page are listed here
-    let actions = [aid, crawl, strike, delay];
+    //PULLS FROM mockDatabase.js
+    let actions = [aid, crawl, delay, strike];
 
     //Not working, under construction!
     function Comparator(a, b) {

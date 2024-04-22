@@ -4,6 +4,7 @@
 //In The Future:
 //make a simplifier for the "traits" section so you only need to write "Manipulate, Earth,"
 /*
+LAYOUT TEMPLATE BELOW
 for copy/paste
 
 const [name] = {
@@ -16,9 +17,9 @@ const [name] = {
     subtext: ""
 }
 
-don't forget to add it to the export list. 
-and import it in actionAssembler. 
-and put it in the actions array.
+don't forget to add the name of your const to the export list. 
+and to import the const into actionAssembler.js (in the first line of code.)
+and to put the const into the "actions" array. It's located on line 24 of actionAssembler.js. 
 */
 
 
@@ -26,10 +27,11 @@ const strike = {
     title: "Strike",
     actionCost: "1",
     trigger:"",
-    requirements: "You wanna hurt someone.",
-    traits: "<a href=\"glossary.html\" class=\"tag\">Manipulate</a>",
-    description: "You hit someone with something.",
-    subtext: ""
+    requirements: "",
+    traits: "<a href=\"glossary.html/#attack\" class=\"tag\">Attack</a>",
+    description: "You attack with a weapon you're wielding or with an unarmed attack, targeting one creature within your reach (for a melee attack) or within range (for a ranged attack). Roll an attack roll using the attack modifier for the weapon or unarmed attack you're using, and compare the result to the target creature's AC to determine the effect.",
+    subtext: "<b>Critical Success</b> You make a damage roll according to the weapon or unarmed attack and deal double damage. <b>Success</b> You make a damage roll according to the weapon or unarmed attack and deal damage."
+    
 }
 
 const aid = {
@@ -47,7 +49,7 @@ const crawl = {
     actionCost: "1",
     trigger: " ",
     requirements: "You are prone and your speed is at least 10 feet.",
-    traits: "<a href=\"glossary.html\" class=\"tag\">Move</a>",
+    traits: "<a href=\"glossary.html/#move\" class=\"tag\">Move</a>",
     description: "You move 5 feet by crawling and continue to stay prone.",
     subtext: ""
 }

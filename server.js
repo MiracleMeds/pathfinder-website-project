@@ -30,7 +30,7 @@ site.get('/ActionList(.html)?|/action(list)?|/actions', (req, res) =>{
 site.get('(/pages/login)?/login(.html)?', (req, res) =>{
     res.sendFile(path.join(__dirname, 'pages', 'login', 'login.html'));
 });
-site.get('(/login)?/signup(.html)?', (req, res) =>{
+site.get('(/pages/login)?/signup(.html)?', (req, res) =>{
     res.sendFile(path.join(__dirname, 'pages', 'login', 'signup.html'));
 });
 site.get('(/pages/)?glossary(.html)?', (req, res) =>{
